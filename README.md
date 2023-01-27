@@ -1,3 +1,5 @@
+Wasp3D UDT SDK demonstrates how users can modify UDT data
+
 # UDT SampleApp
 ### UDT SampleApp is a winform application through which we can add, delete and upate data in UDT (User Data Table).
 
