@@ -1,17 +1,11 @@
-Wasp3D UDT SDK demonstrates how users can modify UDT data
-
-
-
-
-# UDT SampleApp
-### UDT SampleApp is a winform application through which we can add, delete and upate data in UDT.
+# UDT Sample App
+### UDT Sample App is a winform application through which we can add, delete and upate data in UDT.
 
 
 - First of all, you need to import udt (**SampleUDT.udt**) in UDT.
-- SampleUDT contains two table which name is Category Table and Data Table.Category Table and Data Table both has two field which name is :
+- SampleUDT contains two table -> Category Table and Data Table.Category Table and Data Table both has two field :
     - Text 
     - Details
-- After opening SampleUDT in UDT you can see like below table.
 
 ## Category Table (Parent Table)
 
@@ -29,11 +23,11 @@ Wasp3D UDT SDK demonstrates how users can modify UDT data
 |  Delhi to get moderate rainfall today   |       |
 
 ## Run SampleUDT app : 
-- Run your SampleUDT app(**BeeSys.Wasp3D.Utility.UdtUpdate**).
+- Run your SampleUDT app.
 - Before add, delete and update, first you need to click **Connect with KC** button. So that you can fetch data from **Category table** as well as Data table.
 - Select Category comboBox where you can select Category and after selecting category, Text name and Details will be display in Name textbox and detais textbox respectively.
 - Using Add, delete and Update button, you can perform operation on parent Table.
-- Similarly, open Data tabpanel, here you can see **Data table** data which is associated with it's parent.
+- Similarly, open Data tab, here you can see **Data table** data which is associated with it's parent.
 - in Data table, using Add,Delete and update button, you can perform operation on Data table.
 
 ## Code Description : 
