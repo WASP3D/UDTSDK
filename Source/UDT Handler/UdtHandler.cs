@@ -4,6 +4,7 @@ using BeeSys.Wasp.KernelController;
 using BeeSys.Wasp3D.Utility;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.IO;
 using System.Linq;
@@ -16,12 +17,18 @@ using System.Xml.XPath;
 
 namespace BeeSys.Wasp3D.Utility
 {
+    /// <summary>
+    /// Class to handle the UDT Data
+    /// </summary>
     public class UDTHandler
     {
         #region Class Variables
          XDocument _xdColumnInfo = null;
         string UDTID = "";
         string UDTName = "";
+        /// <summary>
+        /// Class to handle the CRUD operation within KC 
+        /// </summary>
         private UDTDataManagerHelper m_UDTDataManagerHelper;
         object lockobject = new object();
         Thread m_objthProcess;
@@ -115,7 +122,6 @@ namespace BeeSys.Wasp3D.Utility
         internal DataSet LoadData()
         {
             _dataset = GetDataSet();
-
             return _dataset;
         }
 
@@ -166,7 +172,22 @@ namespace BeeSys.Wasp3D.Utility
             if (bCheckForConnection)
             {
                 sRemoteURL = GetServiceURL();
-                objRemoteHelper = new CRemoteHelper(sRemoteURL);
+                int iResponsePortNumber = 20001;
+                try
+                {
+                    if (ConfigurationManager.AppSettings["responseportnumber"] != null)
+                    {
+                        string sResPortNum = ConfigurationManager.AppSettings["responseportnumber"].ToString();
+                        bool bValid = int.TryParse(sResPortNum, out iResponsePortNumber);
+                    }
+                }
+                catch { }
+
+                objRemoteHelper = new CRemoteHelper(sRemoteURL, "UDTUpdate", iResponsePortNumber);
+                objRemoteHelper.InitRemoteHelper();
+
+                Thread.Sleep(1000);
+
                 //get the kc service url from common config
                 ConnectionInfo objConnectioninfo = objRemoteHelper.CheckConnection();
                 //ConnectionInfo objConnectioninfo = CRemoteHelper.RemoteHelper.CheckConnection();
@@ -175,16 +196,10 @@ namespace BeeSys.Wasp3D.Utility
                     objServiceUrl = CRemoteHelper.GetDisconnectedUrl("UDTManager");
                     objServiceUrlDataMgr = CRemoteHelper.GetDisconnectedUrl("UDTDataManager");
                 }
-
             }
-
-
             if (!string.IsNullOrEmpty(objServiceUrlDataMgr.sEndpointAddress))
                 objUDTEnumDataManagerHelper = new UDTDataManagerHelper(objServiceUrlDataMgr.sEndpointAddress);
-
-
             UDTDataManagerHelper = objUDTEnumDataManagerHelper;
-
         }
         /// <summary>
         /// get the service url
@@ -691,7 +706,7 @@ namespace BeeSys.Wasp3D.Utility
                 m_UDTDataManagerHelper = null;
 
             }
-
+            
 
             if (m_objQueue != null)
             {
@@ -703,6 +718,7 @@ namespace BeeSys.Wasp3D.Utility
                 _dataset.Clear();
                 _dataset = null;
             }
+            CRemoteHelper.AppClosing();
         }
     }
     internal class LogWriter

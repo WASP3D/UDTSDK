@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Build\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -37,28 +37,16 @@
     <Reference Include="BeeSys.Wasp.Communicator, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Beehive Systems Ltd\WASP3D\Common\Shared Resources\BeeSys.Wasp.Communicator.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="BeeSys.Wasp.KernelController.IServices, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Data.Desktop.v23.2, Version=23.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Beehive Systems Ltd\WASP3D\Common\Shared Resources\BeeSys.Wasp.KernelController.IServices.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Data.Desktop.v23.2\v4.0_23.2.3.0__b88d1754d700e49a\DevExpress.Data.Desktop.v23.2.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="BeeSys.Wasp.KernelController.IUDTDataManager">
-      <HintPath>C:\Program Files\Beehive Systems Ltd\WASP3D\Common\Shared Resources\BeeSys.Wasp.KernelController.IUDTDataManager.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="BeeSys.Wasp.KernelController.UDTDataManagerHelper">
-      <HintPath>C:\Program Files\Beehive Systems Ltd\WASP3D\Common\Shared Resources\BeeSys.Wasp.KernelController.UDTDataManagerHelper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="BeeSys.Wasp.KernelController.UDTManagerHelper">
-      <HintPath>C:\Program Files\Beehive Systems Ltd\WASP3D\Common\Shared Resources\BeeSys.Wasp.KernelController.UDTManagerHelper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -81,6 +69,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UDT Handler\UdtHandler.cs" />
+    <Compile Include="WAssemblyResolver.cs" />
     <EmbeddedResource Include="frmUdtUpdate.resx">
       <DependentUpon>frmUdtUpdate.cs</DependentUpon>
     </EmbeddedResource>

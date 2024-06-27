@@ -228,10 +228,13 @@ namespace BeeSys.Wasp3D.Utility
         {
             try
             {
+                if (cmbBoxCategory.SelectedValue == null)
+                    return;
                 //Find the datarow with selected item in combobox
                 DataRow dataRow = _serviceUDTHandler.DataSet.Tables[_parentTableName].Rows.Cast<DataRow>()
                                       .Where(row => string.Compare(row[_parentPrimaryKeyColumnName].ToString(), cmbBoxCategory.SelectedValue.ToString(), true) == 0).FirstOrDefault();
-
+                if (dataRow == null)
+                    return;
                 txtBoxTextCategory.Text = dataRow[_textColumn].ToString();
 
                 txtBoxDetailsCategory.Text = dataRow[_detailColumn].ToString();

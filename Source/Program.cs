@@ -14,6 +14,8 @@ namespace BeeSys.Wasp3D.Utility
         [STAThread]
         static void Main()
         {
+            //AssemblyResolver to read the required assemblies from default path
+            WAssemblyManager.AddDefaultPath();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmUdtUpdate());
