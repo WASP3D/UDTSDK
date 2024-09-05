@@ -2,7 +2,7 @@
 ### UDT Sample App is a winform application through which we can add, delete and upate data in UDT.
 
 
-- First of all, you need to import udt (**UDTSDK\Scenes\SDK Ticker Sample.udt**) through Designer Application.  
+- First, you need to import the UDT file (UDTSDK\Scenes\SDK Ticker Sample.udt) through the Designer Application.  
 
 
 ## Code Description : 
