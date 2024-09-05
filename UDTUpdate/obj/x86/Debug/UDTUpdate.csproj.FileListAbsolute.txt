@@ -1,5 +1,0 @@
-C:\Users\anchit\Desktop\SDK\UDTSDK\Source\UDTUpdate\obj\x86\Debug\UDTUpdate.csprojAssemblyReference.cache
-C:\Users\anchit\Desktop\SDK\UDTSDK\Source\UDTUpdate\obj\x86\Debug\UDTUpdate.frmUDTUpdate.resources
-C:\Users\anchit\Desktop\SDK\UDTSDK\Source\UDTUpdate\obj\x86\Debug\UDTUpdate.Properties.Resources.resources
-C:\Users\anchit\Desktop\SDK\UDTSDK\Source\UDTUpdate\obj\x86\Debug\UDTUpdate.csproj.GenerateResource.cache
-C:\Users\anchit\Desktop\SDK\UDTSDK\Source\UDTUpdate\obj\x86\Debug\UDTUpdate.csproj.CoreCompileInputs.cache
