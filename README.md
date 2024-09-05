@@ -2,33 +2,8 @@
 ### UDT Sample App is a winform application through which we can add, delete and upate data in UDT.
 
 
-- First of all, you need to import udt (**SampleUDT.udt**) in UDT.
-- SampleUDT contains two table -> Category Table and Data Table.Category Table and Data Table both has two field :
-    - Text 
-    - Details
+- First of all, you need to import udt (**UDTSDK\Scenes\SDK Ticker Sample.udt**) through Designer Application.  
 
-## Category Table (Parent Table)
-
-| Text | Details |
-| ------ | ------ |
-|  Sports     |   Sports  Details    |
-|  Weather      |  Weather  Details    |
-
-
-## Data Table (Child Table)
-
-| Text | Details |
-| ------ | ------ |
-|  CWG winners: A host of unlikely Indian sports hero     |         |
-|  Delhi to get moderate rainfall today   |       |
-
-## Run SampleUDT app : 
-- Run your SampleUDT app.
-- Before add, delete and update, first you need to click **Connect with KC** button. So that you can fetch data from **Category table** as well as Data table.
-- Select Category comboBox where you can select Category and after selecting category, Text name and Details will be display in Name textbox and detais textbox respectively.
-- Using Add, delete and Update button, you can perform operation on parent Table.
-- Similarly, open Data tab, here you can see **Data table** data which is associated with it's parent.
-- in Data table, using Add,Delete and update button, you can perform operation on Data table.
 
 ## Code Description : 
 
@@ -39,10 +14,7 @@
   ```
   if (_serviceUDTHandler == null)
     {
-        _serviceUDTHandler = new UDTHandler(@".\SampleUDT");
-          OR
-         //_serviceUDTHandler = new UDTHandler("CC2E882C-B402-40FB-881A-CA251FE9CF01");
-
+        _serviceUDTHandler = new UDTHandler(@".\SDK Ticker Sample");
         _serviceUDTHandler.ConnectWithKC();
         _serviceUDTHandler.LoadData();
      }
@@ -128,7 +100,7 @@
                 UDTDataManagerHelper.DeleteRow(objUdtArgs);
         }
 ```
-- To get actual table name call GetActualTableName()
+
 
 
 
