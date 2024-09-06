@@ -63,3 +63,11 @@ C:\Users\anchit\Documents\GitHub\UDTSDK\UDTUpdate\UDTUpdateControl\obj\Debug\UDT
 C:\Users\anchit\Documents\GitHub\UDTSDK\UDTUpdate\UDTUpdateControl\obj\Debug\UDTControl.csproj.CoreCompileInputs.cache
 C:\Users\anchit\Documents\GitHub\UDTSDK\UDTUpdate\UDTUpdateControl\obj\Debug\UDTUpdateControl.dll
 C:\Users\anchit\Documents\GitHub\UDTSDK\UDTUpdate\UDTUpdateControl\obj\Debug\UDTUpdateControl.pdb
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\Executables\UDTUpdateControl.dll
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\Executables\UDTUpdateControl.pdb
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\UDTUpdate\UDTUpdateControl\obj\Debug\UDTControl.csproj.AssemblyReference.cache
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\UDTUpdate\UDTUpdateControl\obj\Debug\UDTUpdate.ctrlUdtUpdate.resources
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\UDTUpdate\UDTUpdateControl\obj\Debug\UDTControl.csproj.GenerateResource.cache
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\UDTUpdate\UDTUpdateControl\obj\Debug\UDTControl.csproj.CoreCompileInputs.cache
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\UDTUpdate\UDTUpdateControl\obj\Debug\UDTUpdateControl.dll
+E:\Code\Ver 6.5\Wasp3d_GIT_SDK\SDK_GIT_CODE_DEMO\UDTSDK-6.5\UDTUpdate\UDTUpdateControl\obj\Debug\UDTUpdateControl.pdb

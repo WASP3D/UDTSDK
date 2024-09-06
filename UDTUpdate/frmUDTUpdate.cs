@@ -32,8 +32,7 @@ namespace UDTUpdate
         //server ip used to connect shot box
         private string m_sShotBoxServerIp = string.Empty;
         private string kcurl;
-        private string m_sLinkType = string.Empty;
-        private string m_sPort = string.Empty;
+        private string m_sLinkType = string.Empty;       
         bool m_bIsPause = false;
         private FileInfo m_objFileInfo = null;
         private int m_appPort;
@@ -337,7 +336,7 @@ namespace UDTUpdate
             string sLinkID = string.Empty;
             try
             {
-                m_sPort = ConfigurationManager.AppSettings["port"].ToString();
+              
                 m_sLinkType = ConfigurationManager.AppSettings["linktype"].ToString();
                 kcurl = ConfigurationManager.AppSettings["REMOTEMANAGERURL"].ToString();
                 m_appName = ConfigurationManager.AppSettings["appName"].ToString();
